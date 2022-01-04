@@ -30,13 +30,13 @@ namespace BranchingAssignment
                 double length = Convert.ToDouble(Console.ReadLine());
 
                 //display error message is package exceeds mathematical limit
-                if (width * height * length > 50)
+                if (width + height + length > 50)
                 {
                     Console.WriteLine("Package too big to be shipped via Package Express.");
                 }
 
                 //display quote and end program
-                else if (width * height * length <= 50)
+                else if (width + height + length <= 50)
                 {
                     //convert dimensions and weight calculation to decimal data type and assign to a variable
                     //of type decimal.
