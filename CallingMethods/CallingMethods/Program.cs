@@ -18,17 +18,29 @@ namespace CallingMethods
             num1 = Console.ReadLine();
 
             //ask user to enter second number
-            Console.WriteLine("Enter the second number for the math operation:");
+            Console.WriteLine("Enter the second number (if any) for the math operation:");
             num2 = Console.ReadLine();
+
+            //check if user decided not to enter a second value
+            if (num2 == "")
+            {
+                product = Math.Multiply(num1);
+            }
+
+            //otherwise perform the math option using the required first and option second values
+            else
+            {
+                product = Math.Multiply(num1, num2);
+            }
 
             //perform math operations by calling on methods in another class and passing in
             //the user-provided values
-            product = Math.Multiply(num1, num2);
+            //product = Math.Multiply(num1, num2);
             //quotient = Math.Quotient(num1, num2);
             //addition = Math.Addition(num1, num2);
 
             //display the results of the math operations
-            Console.WriteLine("\n\nThe math output of your numbers is:\n" + product + "\n");
+            Console.WriteLine("\n\nThe math output of your number/s is:\n" + product + "\n");
             //Console.WriteLine("The quotient of your numbers is:\n" + quotient + "\n");
             //Console.WriteLine("The addition of your numbers is:\n" + addition + "\n");
 

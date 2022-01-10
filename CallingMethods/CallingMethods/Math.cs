@@ -27,7 +27,8 @@ namespace CallingMethods
         }
 
         //create an overloaded method that receives two strings and returns an integer
-        public static int Multiply(string a, string b)
+        //the second parameter is optional since it is assigned a default value
+        public static int Multiply(string a, string b = "1")
         {
             int d = Convert.ToInt32(a);
             int e = Convert.ToInt32(b);
