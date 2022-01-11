@@ -5,5 +5,12 @@ namespace Inheritance
     {
         //property for employee id
         public int Id { get; set; }
+
+        //override the implemenation of SayName method found in superclass Person
+        public override void SayName()
+        {
+            Console.WriteLine("Hello. Let's get started...");
+            base.SayName(); //created by default when overriding the method
+        }
     }
 }

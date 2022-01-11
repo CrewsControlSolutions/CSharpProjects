@@ -7,9 +7,10 @@ namespace Inheritance
         static void Main(string[] args)
         {
             //instantiate and initialize an Employee object with a first and last name
-            Employee employee = new Employee() { FirstName = "Sample", LastName = "Student" };
+            //also demonstrates polymorphism (inheriting properties/behavior from higher-order class)
+            Person employee = new Employee() { FirstName = "Sample", LastName = "Student" };
 
-            //call the superclass method on the Employee object
+            //call the overwritten method (see Employee class) on the Employee object
             employee.SayName();
         }
     }
