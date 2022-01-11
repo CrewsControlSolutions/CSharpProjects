@@ -32,6 +32,7 @@ namespace BlackJackCardGame
         }
         public List<Card> Cards { get; set; }
 
+        //example of a "class method"
         public void Shuffle(int times = 1)
         {
             for (int i = 0; i < times; i++)
