@@ -17,5 +17,17 @@ namespace Inheritance
         {
             Console.WriteLine(employee.FirstName + " " + employee.LastName + " has quit the company.");
         }
+
+        //check to see if 2 employee ids are equal by overloading the "==" operator
+        public static bool operator== (Employee employee1, Employee employee2)
+        {
+            return employee1.Id == employee2.Id;
+        }
+
+        //check to see if 2 employee ids are not equal by overloading the "!=" operator
+        public static bool operator!= (Employee employee1, Employee employee2)
+        {
+            return employee1.Id != employee2.Id;
+        }
     }
 }

@@ -5,7 +5,7 @@ namespace BlackJackCardGame
 {
     public abstract class Game //a base (abstract) class. "We have locked our code down."
     {
-        public List<string> Players { get; set; }
+        public List<Player> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
 
@@ -16,9 +16,9 @@ namespace BlackJackCardGame
         public virtual void ListPlayers() //this method gets inherited by an inheriting class but can
                                           //be overwritten
         {
-            foreach (string player in Players)
+            foreach (Player player in Players)
             {
-                Console.WriteLine(player);
+                Console.WriteLine(player.Name);
             }
         }
     }

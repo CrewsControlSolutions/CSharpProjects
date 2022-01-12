@@ -1,7 +1,8 @@
 ﻿using System;
 namespace BlackJackCardGame
 {
-    public interface IWalkAway
+    interface IWalkAway //all interface names start with an "I" for interface
     {
+        void WalkAway(Player player);
     }
 }

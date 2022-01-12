@@ -1,7 +1,8 @@
 ﻿using System;
 namespace BlackJackCardGame
 {
-    public class BlackJackGame : Game //inherits all of the properties from Game, the super-class
+    public class BlackJackGame : Game, IWalkAway //inherits all of the properties from Game, the super-class
+                                                 //and also from IWalkAway, an interface
     {
         //BlackJackGame game = new BlackJackGame();
 
@@ -11,8 +12,12 @@ namespace BlackJackCardGame
         }
         public override void ListPlayers()
         {
-            Console.WriteLine("BlackJack players: ");
+            Console.WriteLine("BlackJack Players: ");
             base.ListPlayers();
+        }
+        public void WalkAway(Player player)
+        {
+            throw new NotImplementedException();
         }
     }
 }

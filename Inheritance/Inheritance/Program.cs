@@ -19,6 +19,27 @@ namespace Inheritance
             //create an object of type IQuittable and call the Quit() method on it
             IQuittable quiter = new Employee();
             quiter.Quit(employeeBad);
+
+            //create a new employee with an Id
+            Employee employeeAlpha = new Employee() { FirstName = "Kyle", LastName = "Mellon" };
+            employeeAlpha.Id = 49024;
+
+            //create another new employee with the same Id, simulating a duplicate entry
+            Employee employeeBravo = new Employee() { FirstName = "Kyle", LastName = "Mellon" }; ;
+            employeeBravo.Id = 49024;
+
+            //test whether the two previously created employee objects have the same ID
+            Console.WriteLine("\nEmployees " + employeeAlpha.FirstName + " " + employeeAlpha.LastName + " and " +
+                employeeBravo.FirstName + " " + employeeBravo.LastName + " share the same ID number: ");
+            if (employeeAlpha == employeeBravo)
+            {
+                Console.WriteLine("True.");
+            }
+            else if (employeeAlpha != employeeBravo)
+            {
+                Console.WriteLine("False.");
+            }
+
         }
     }
 }
