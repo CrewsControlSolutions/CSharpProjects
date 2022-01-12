@@ -19,12 +19,15 @@ namespace BlackJackCardGame
             //game.ListPlayers();
             //game.Play();
 
-            Game game = new BlackJackGame(); //BlackJackGame morphs into a higher-order object called Game
-            game.Players = new List<Player>();
-            Player player = new Player();
-            player.Name = "Jesse";
-            game = game + player;
-            game = game + player;
+            //Game game = new BlackJackGame(); //BlackJackGame morphs into a higher-order object called Game
+            //game.Players = new List<Player>();
+            //Player player = new Player();
+            //player.Name = "Jesse";
+            //game = game + player;
+            //game = game + player;
+
+            //Player<Card> player = new Player<Card>();
+            //player.Hand = new List<Card>();
 
             Deck deck = new Deck(); //instantiated an object of type "Deck" and assigned it
                                     //to the variable called "deck"
