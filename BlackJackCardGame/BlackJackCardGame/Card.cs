@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlackJackCardGame
 {
-    public class Card
+    public struct Card
     {
         ////a constructor that is also a function and works to assign a default value to a Card
         //public Card()
