@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Inheritance
 {
     public class Employee : Person, IQuittable //Employee class inherits the properties from the superclass Person
+                                               //Add "<T>" after Employee for Generics assignment
     {
+        ////add generic property for Generics assignment
+        //public List<T> Things { get; set; }
+
         //property for employee id
         public int Id { get; set; }
 
@@ -19,13 +25,13 @@ namespace Inheritance
         }
 
         //check to see if 2 employee ids are equal by overloading the "==" operator
-        public static bool operator== (Employee employee1, Employee employee2)
+        public static bool operator ==(Employee employee1, Employee employee2)
         {
             return employee1.Id == employee2.Id;
         }
 
         //check to see if 2 employee ids are not equal by overloading the "!=" operator
-        public static bool operator!= (Employee employee1, Employee employee2)
+        public static bool operator !=(Employee employee1, Employee employee2)
         {
             return employee1.Id != employee2.Id;
         }

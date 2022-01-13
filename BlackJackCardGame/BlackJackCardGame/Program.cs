@@ -26,8 +26,18 @@ namespace BlackJackCardGame
             //game = game + player;
             //game = game + player;
 
+            //example of using "generics" where we pass in a data type (in this case Card)
+            //on creation that affects the rest of
+            //the class. The use of generics abstracts code for better adaptability.
             //Player<Card> player = new Player<Card>();
             //player.Hand = new List<Card>();
+
+            //DaysOfTheWeek day = DaysOfTheWeek.Monday;
+
+            //Card card = new Card();
+            //card.Suit = Suit.Clubs;
+            //int underlyingValue = (int)Suit.Diamonds; //casted Suit.Diamonds to an integer
+            //Console.WriteLine(underlyingValue);
 
             Deck deck = new Deck(); //instantiated an object of type "Deck" and assigned it
                                     //to the variable called "deck"
@@ -41,8 +51,6 @@ namespace BlackJackCardGame
             //Console.WriteLine("Times shuffled: {0}", timesShuffled); //easy way to format strings: {}
         }
 
-
-
         //public static Deck Shuffle(Deck deck, int times)
         //{
         //    for (int i=0; i < times; i++)
@@ -51,5 +59,16 @@ namespace BlackJackCardGame
         //    }
         //    return deck;
         //}
+
+        public enum DaysOfTheWeek
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
     }
 }
