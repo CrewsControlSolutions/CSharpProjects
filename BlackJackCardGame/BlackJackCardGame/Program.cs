@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace BlackJackCardGame
 {
@@ -47,26 +48,22 @@ namespace BlackJackCardGame
 
             //Console.WriteLine(card1.Face);
 
-            
+            //Deck deck = new Deck(); //instantiated an object of type "Deck" and assigned it
+            //                        //to the variable called "deck"
+            //                        //int count = deck.Cards.Count(x => x.Face == Face.Ace); //example of lambda expression
+            //                        //                                                       //evaluate this expression on each item
 
-            Deck deck = new Deck(); //instantiated an object of type "Deck" and assigned it
-                                    //to the variable called "deck"
-                                    //int count = deck.Cards.Count(x => x.Face == Face.Ace); //example of lambda expression
-                                    //                                                       //evaluate this expression on each item
+            ////List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList(); //filters a list in one line of code
 
-            //List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList(); //filters a list in one line of code
+            //List<int> numberList = new List<int>() { 1, 2, 3, 4, 7, 23, 4, 8 };
 
-            List<int> numberList = new List<int>() { 1, 2, 3, 4, 7, 23, 4, 8 };
-
-            int sum = numberList.Where(x => x > 4).Sum();
-            Console.WriteLine(sum);
+            //int sum = numberList.Where(x => x > 4).Sum(); //lambda functions makes programming enjoyable
+            //Console.WriteLine(sum);
 
             //foreach (Card card in newList)
             //{
             //    Console.WriteLine(card.Face);
             //}
-
-
 
             //deck.Shuffle(3); //call on the shuffle method
 
@@ -76,6 +73,37 @@ namespace BlackJackCardGame
             //}
             //Console.WriteLine(deck.Cards.Count);
             //Console.WriteLine("Times shuffled: {0}", timesShuffled); //easy way to format strings: {}
+
+            string text = "Here is some text3.";
+            File.WriteAllText(@"/Users/mikecrews/Documents/TechAcademy/GitHub/CSharpProjects/BlackJackCardGame/log.txt", text);
+            //File.ReadAllText(@"/Users/mikecrews/Documents/TechAcademy/GitHub/CSharpProjects/BlackJackCardGame/log.txt");
+
+
+
+            Console.WriteLine("Welcome to the Awana Game Night Extraveganza! Please enter your name below.");
+            string playerName = Console.ReadLine();
+
+            Console.WriteLine("And how many Awana Bucks did you bring today?");
+            int bank = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Hello, {0}. Would you like to join a game of BlackJack right now?", playerName);
+            string answer = Console.ReadLine().ToLower();
+
+            if (answer == "yes" || answer == "yeah" || answer == "y")
+            {
+                Player player = new Player(playerName, bank);
+                Game game = new BlackJackGame();
+                game += player;
+                player.isActivelyPlaying = true;
+                while (player.isActivelyPlaying && player.Balance > 0)
+                {
+                    game.Play();
+                }
+                game -= player;
+                Console.WriteLine("Thank you for playing!");
+            }
+
+            Console.WriteLine("Feel free to look around the game extraveganza. Bye for now.");
         }
 
         //public static Deck Shuffle(Deck deck, int times)
