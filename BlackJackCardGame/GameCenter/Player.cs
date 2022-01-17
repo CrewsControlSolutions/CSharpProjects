@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BlackJackCardGame
+namespace GameCenter
 {
     public class Player //use "Player<T>" instead of just "Player" when using generics
     {

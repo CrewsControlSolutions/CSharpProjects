@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackJackCardGame
+namespace GameCenter.BlackJackCardGame
 {
     public class BlackJackDealer : Dealer
     {

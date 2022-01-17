@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD2F4A34-F9D7-4DF8-A752-43457561AF49}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GameCenter</RootNamespace>
+    <AssemblyName>GameCenter</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Card.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="Dealer.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="Deck.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="Game.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="IWalkAway.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="Player.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="BlackJackDealer.cs" />
+    <Compile Include="BlackJackGame.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="BlackJackRules.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
