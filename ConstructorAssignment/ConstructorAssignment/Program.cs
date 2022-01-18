@@ -24,7 +24,7 @@ namespace ConstructorAssignment
             const string weatherStatement = "The weather forecast for today is mostly sunny.";
             var dailyLow = 10;
 
-            Forecast today = new Forecast(weatherStatement, dailyLow);
+            Forecast today = new Forecast();
             Console.WriteLine(today.generalPrediction);
 
 
