@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GameCenter
+namespace Casino
 {
     public abstract class Game //a base (abstract) class. "We have locked our code down."
     {

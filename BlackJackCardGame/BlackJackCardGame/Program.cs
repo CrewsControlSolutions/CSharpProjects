@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using Casino;
+using Casino.Interfaces;
+using Casino.BlackJackCardGame;
 
 namespace BlackJackCardGame
 {
@@ -85,9 +88,12 @@ namespace BlackJackCardGame
 
             //TimeSpan ageAtGraduation = yearOfGraduation - yearOfBirth;
 
+            const string casinoName = "Grand Hotel and Casino";
+            //var newPlayer = new Player("Jesse");
 
+            
 
-            Console.WriteLine("Welcome to the Awana Game Night Extraveganza! Please enter your name below.");
+            Console.WriteLine("Welcome to the {0}! Please enter your name below.", casinoName);
             string playerName = Console.ReadLine();
 
             Console.WriteLine("And how many Awana Bucks did you bring today?");
@@ -99,6 +105,11 @@ namespace BlackJackCardGame
             if (answer == "yes" || answer == "yeah" || answer == "y")
             {
                 Player player = new Player(playerName, bank);
+                player.Id = Guid.NewGuid();
+                using (StreamWriter file = new StreamWriter(@"/Users/mikecrews/Documents/TechAcademy/GitHub/CSharpProjects/BlackJackCardGame/log.txt", true))
+                {
+                    file.WriteLine(player.Id);
+                }
                 Game game = new BlackJackGame();
                 game += player;
                 player.isActivelyPlaying = true;

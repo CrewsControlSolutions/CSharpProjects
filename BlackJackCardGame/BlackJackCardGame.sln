@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.810.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackCardGame", "BlackJackCardGame\BlackJackCardGame.csproj", "{9677840A-79EE-42BB-B209-8592F820CB34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameCenter", "GameCenter\GameCenter.csproj", "{FD2F4A34-F9D7-4DF8-A752-43457561AF49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casino", "Casino\Casino.csproj", "{B3702DF9-8D36-441F-B500-FE98336C2D29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{9677840A-79EE-42BB-B209-8592F820CB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9677840A-79EE-42BB-B209-8592F820CB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9677840A-79EE-42BB-B209-8592F820CB34}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD2F4A34-F9D7-4DF8-A752-43457561AF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD2F4A34-F9D7-4DF8-A752-43457561AF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD2F4A34-F9D7-4DF8-A752-43457561AF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD2F4A34-F9D7-4DF8-A752-43457561AF49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3702DF9-8D36-441F-B500-FE98336C2D29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3702DF9-8D36-441F-B500-FE98336C2D29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3702DF9-8D36-441F-B500-FE98336C2D29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3702DF9-8D36-441F-B500-FE98336C2D29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

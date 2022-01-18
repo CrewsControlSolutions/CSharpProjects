@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using GameCenter.Interfaces;
+using Casino.Interfaces;
 
-namespace GameCenter.BlackJackCardGame
+namespace Casino.BlackJackCardGame
 {
     public class BlackJackGame : Game, IWalkAway //inherits all of the properties from Game, the super-class
                                                  //and also from IWalkAway, an interface

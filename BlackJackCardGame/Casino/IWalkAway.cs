@@ -1,5 +1,5 @@
 ﻿using System;
-namespace GameCenter.Interfaces
+namespace Casino.Interfaces
 {
     interface IWalkAway //all interface names start with an "I" for interface
     {
