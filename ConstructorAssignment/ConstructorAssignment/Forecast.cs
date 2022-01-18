@@ -1,9 +1,11 @@
 ﻿using System;
+
 namespace ConstructorAssignment
 {
     public class Forecast
     {
-        internal bool generalPrediction;
+        public string generalPrediction;
+        public int lowPrediction;
 
         public Forecast() : this("There will be a weather pattern today.", 72)
         {
@@ -12,8 +14,9 @@ namespace ConstructorAssignment
 
         public Forecast(string model, int low)
         {
-            string generalPrediction = model;
+            generalPrediction = model;
             int lowPrediction = low;
+            //Console.WriteLine(generalPrediction);
         }
     }
 }

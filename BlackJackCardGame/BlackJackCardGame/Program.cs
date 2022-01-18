@@ -96,8 +96,14 @@ namespace BlackJackCardGame
             Console.WriteLine("Welcome to the {0}! Please enter your name below.", casinoName);
             string playerName = Console.ReadLine();
 
-            Console.WriteLine("And how many Awana Bucks did you bring today?");
-            int bank = Convert.ToInt32(Console.ReadLine());
+            bool validAnswer = false;
+            int bank = 0;
+            while (!validAnswer)
+            {
+                Console.WriteLine("And how much money did you bring today?");
+                validAnswer = int.TryParse(Console.ReadLine(), out bank);
+                if (!validAnswer) Console.WriteLine("Please enter digits only, no decimals.");
+            }
 
             Console.WriteLine("Hello, {0}. Would you like to join a game of BlackJack right now?", playerName);
             string answer = Console.ReadLine().ToLower();
@@ -115,7 +121,15 @@ namespace BlackJackCardGame
                 player.isActivelyPlaying = true;
                 while (player.isActivelyPlaying && player.Balance > 0)
                 {
-                    game.Play();
+                    try
+                    {
+                        game.Play();
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("An error occured. Please contact your System Admin.");
+                        return;
+                    }
                 }
                 game -= player;
                 Console.WriteLine("Thank you for playing!");
