@@ -21,10 +21,14 @@ namespace ConstructorAssignment
 
         static void Main(string[] args)
         {
+            //create attributes of what makes up a "forecast"
             const string weatherStatement = "The weather forecast for today is mostly sunny.";
             var dailyLow = 10;
 
-            Forecast today = new Forecast();
+            //instantiate the Forecast object and pass the forecast arguments
+            Forecast today = new Forecast(weatherStatement, dailyLow);
+
+            //display one of the object's properties
             Console.WriteLine(today.generalPrediction);
 
 
