@@ -80,3 +80,5 @@ Ten of Diamonds
 ffbf1717-13ca-4fea-9633-85ef5ea022cb
 57f40dee-e13d-4b4f-a4f1-22921c0691f6
 4b4ed65b-d0f8-42af-9fbe-5956651a577c
+67a0a0ce-e199-4746-b8e1-379c14b7b4f3
+acb06f0c-d9ff-442a-9403-16a36d49ca0c
