@@ -1,0 +1,15 @@
+﻿@using MVCBasic.Models
+@model List<Instructor>
+
+@{
+    ViewBag.Title = "Instructors";
+}
+
+<h3>@ViewBag.Title</h3>
+
+@{
+    foreach(Instructor prof in Model)
+            {
+                <h6>@prof.FirstName</h6>
+            }
+}

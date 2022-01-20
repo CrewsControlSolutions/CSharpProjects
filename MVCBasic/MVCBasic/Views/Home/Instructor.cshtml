@@ -1,0 +1,26 @@
+﻿@model MVCBasic.Models.Instructor
+
+@{
+    ViewBag.Title = "Instructor";
+}
+
+<h3>@ViewBag.Title</h3>
+
+<h8>
+    Instructor ID: @ViewBag.Id
+</h8>
+
+<p>
+    Details:
+</p>
+<ul>
+    <li>
+        Campus Wide ID (CWID): @Model.Id
+    </li>
+    <li>
+        First Name: @Model.FirstName
+    </li>
+    <li>
+        Last Name @Model.LastName
+    </li>
+</ul>

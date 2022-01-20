@@ -79,8 +79,8 @@ namespace BlackJackCardGame
             //Console.WriteLine(deck.Cards.Count);
             //Console.WriteLine("Times shuffled: {0}", timesShuffled); //easy way to format strings: {}
 
-            //string text = "Here is some text3.";
-            //File.WriteAllText(@"/Users/mikecrews/Documents/TechAcademy/GitHub/CSharpProjects/BlackJackCardGame/log.txt", text);
+            string text = "Here is some text3.";
+            File.WriteAllText(@"/Users/mikecrews/Documents/TechAcademy/GitHub/CSharpProjects/BlackJackCardGame/log.txt", text);
             //File.ReadAllText(@"/Users/mikecrews/Documents/TechAcademy/GitHub/CSharpProjects/BlackJackCardGame/log.txt");
 
             //DateTime dateTime = new DateTime(1995, 5, 23, 8, 32, 45);
