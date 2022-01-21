@@ -299,27 +299,28 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Newsletter.Context.cs">
+    <Compile Include="Models\Newsletter.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Newsletter.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Newsletter.cs">
+    <Compile Include="Models\Newsletter.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Newsletter.tt</DependentUpon>
     </Compile>
-    <Compile Include="Newsletter.Designer.cs">
+    <Compile Include="Models\Newsletter.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Newsletter.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SignUp.cs">
+    <Compile Include="Models\SignUp.cs">
       <DependentUpon>Newsletter.tt</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -332,23 +333,23 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Newsletter.Context.tt">
+    <Content Include="Models\Newsletter.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Newsletter.edmx</DependentUpon>
       <LastGenOutput>Newsletter.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Newsletter.tt">
+    <Content Include="Models\Newsletter.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Newsletter.edmx</DependentUpon>
       <LastGenOutput>Newsletter.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Newsletter.edmx">
+    <EntityDeploy Include="Models\Newsletter.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Newsletter.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Newsletter.edmx.diagram">
+    <Content Include="Models\Newsletter.edmx.diagram">
       <DependentUpon>Newsletter.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -376,10 +377,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

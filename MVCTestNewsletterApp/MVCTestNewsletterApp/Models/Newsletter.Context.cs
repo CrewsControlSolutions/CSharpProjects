@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MVCTestNewsletterApp
+namespace MVCTestNewsletterApp.Models
 {
     using System;
     using System.Data.Entity;
