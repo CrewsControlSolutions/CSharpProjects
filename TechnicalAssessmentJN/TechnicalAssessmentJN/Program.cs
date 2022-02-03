@@ -43,39 +43,40 @@ namespace TechnicalAssessmentJN
                 //iterate through each index of the string, unless a break occurs along the way
                 for (int i = 0; i < item.Length; i++)
                 {
-                    //check for a left-side bracket
+                    //check first for a left-side bracket
                     if (item.IndexOf('{', i) == i)
                     {
                         leftBracketCounter++;
                     }
 
-                    //check for a right-side bracket
+                    //check next for a right-side bracket
                     if (item.IndexOf('}', i) == i)
                     {
                         rightBracketCounter++;
                     }
 
-                    //check for if one too many right-side brackets exist
+                    //check for if a right-side bracket is without its mate
                     if (rightBracketCounter > leftBracketCounter)
                     {
                         break;
                     }
 
-                    //check for if the last index in the string contains a bracket without a mate
+                    //check for whether the last index condition is met and whether the last index contains a
+                    //bracket without a mate
                     else if (i == (item.Length - 1) && leftBracketCounter != rightBracketCounter)
                     {
                         break;
                     }
 
-                    //check for if the last index in the string has been reached. Note that if this final
-                    //check is true, then only matching brackets can exist.
+                    //check for whether the last index condition is met. Note that if this final check is true,
+                    //then only matching bracket pairs can exist within the string.
                     else if (i == (item.Length - 1))
                     {
                         return true;
                     }
                 }
 
-                //this statement is only reached if a break occured during iteration through the string
+                //this statement is only reached if a bracket is without its mate
                 return false;
             }
         }
