@@ -55,7 +55,7 @@ namespace TechnicalAssessmentJN
                         rightBracketCounter++;
                     }
 
-                    //check for if a right-side bracket is without its mate
+                    //check for whether a right-side bracket is without its mate
                     if (rightBracketCounter > leftBracketCounter)
                     {
                         break;
