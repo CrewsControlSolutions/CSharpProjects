@@ -15,5 +15,5 @@
  
  <h4>Unit Testing</h4>
  <p>
-  Unit testing consists of passing eight (8) different types of strings to the method. One can simply choose between these types or create a different string. All code for unit testing takes place within the Main method and does not affect the external bracket pair checking method.
+  Unit testing consists of passing eight (8) different types of strings to the method. One can simply choose between these types or create a new string. All code for unit testing takes place within the Main method and does not affect the external bracket pair checking method.
  </p>
