@@ -4,8 +4,8 @@
 
 <h2>Sections:</h2>
 <ul>
-  <li><h4>Bracket Pair Checking Method</h4></li>
-  <li><h4>Unit Testing</h4></li>
+  <li><h4><a href="https://github.com/CrewsControlSolutions/CSharpProjects/blob/main/TechnicalAssessmentJN/TechnicalAssessmentJN/Program.cs#L29">Bracket Pair Checking Method</a></h4></li>
+  <li><h4><a href="https://github.com/CrewsControlSolutions/CSharpProjects/blob/main/TechnicalAssessmentJN/TechnicalAssessmentJN/Program.cs#L8">Unit Testing</a></h4></li>
 </ul>
  
  <h4>Bracket Pair Checking Method</h4>
