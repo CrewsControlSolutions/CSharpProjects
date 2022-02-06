@@ -1,6 +1,6 @@
 <h1>Squigly Bracket Pair {} Checker</h1>
 
-<p>This simple console application checks whether a passed string contains only valid (inward facing) pair/s of squigly brackets. Invalid (outward facing) squigly bracket pair/s and squigly bracket/s without a mate do not pass the test.</p>
+<p>This simple console application checks whether a passed string contains only valid (inward facing) pair/s of squigly brackets. Invalid (outward facing) squigly bracket pair/s or squigly bracket/s without a mate do not pass the test.</p>
 
 <h2>Sections</h2>
 <ul>
