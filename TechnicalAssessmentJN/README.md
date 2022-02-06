@@ -2,7 +2,7 @@
 
 <p>This simple console application checks whether a passed string contains only valid (inward facing) pair/s of squigly brackets. Invalid (outward facing) squigly bracket pair/s and squigly bracket/s without a mate do not pass the test.</p>
 
-<h2>Sections:</h2>
+<h2>Sections</h2>
 <ul>
   <li><h4><a href="https://github.com/CrewsControlSolutions/CSharpProjects/blob/main/TechnicalAssessmentJN/TechnicalAssessmentJN/BracketChecker.cs">Squigly Bracket Pair Checking Method</a></h4></li>
   <li><h4><a href="https://github.com/CrewsControlSolutions/CSharpProjects/blob/main/TechnicalAssessmentJN/UnitTest/BracketTest1.cs">Unit Testing</a></h4></li>
