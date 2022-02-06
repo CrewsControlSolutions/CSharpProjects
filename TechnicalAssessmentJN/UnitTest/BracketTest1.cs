@@ -31,10 +31,10 @@ namespace BracketTests
         public void MatchingSquiglyBrackets_InvalidSinglePair_ReturnFalse()
         {
             // Arrange
-            var input = "}{";
+            string input = "}{";
 
             // Act
-            var result = BracketChecker.MatchingSquiglyBrackets(input);
+            bool result = BracketChecker.MatchingSquiglyBrackets(input);
 
             // Assert
             Assert.False(result);
@@ -46,10 +46,10 @@ namespace BracketTests
         public void MatchingSquiglyBrackets_SingleLeftBracketWithValidPair_ReturnFalse()
         {
             // Arrange
-            var input = "{{}";
+            string input = "{{}";
 
             // Act
-            var result = BracketChecker.MatchingSquiglyBrackets(input);
+            bool result = BracketChecker.MatchingSquiglyBrackets(input);
 
             // Assert
             Assert.False(result);
@@ -60,10 +60,10 @@ namespace BracketTests
         public void MatchingSquiglyBrackets_EmptyString_ReturnTrue()
         {
             // Arrange
-            var input = "";
+            string input = "";
 
             // Act
-            var result = BracketChecker.MatchingSquiglyBrackets(input);
+            bool result = BracketChecker.MatchingSquiglyBrackets(input);
 
             // Assert
             Assert.True(result);
@@ -75,10 +75,10 @@ namespace BracketTests
         public void MatchingSquiglyBrackets_ValidPairCharactersNotSquiglyBracketsInside_ReturnTrue()
         {
             // Arrange
-            var input = "{abc...xyz}";
+            string input = "{abc...xyz}";
 
             // Act
-            var result = BracketChecker.MatchingSquiglyBrackets(input);
+            bool result = BracketChecker.MatchingSquiglyBrackets(input);
 
             // Assert
             Assert.True(result);
@@ -90,10 +90,10 @@ namespace BracketTests
         public void MatchingSquiglyBrackets_ValidPairsAdjacent_ReturnTrue()
         {
             // Arrange
-            var input = "{}{}";
+            string input = "{}{}";
 
             // Act
-            var result = BracketChecker.MatchingSquiglyBrackets(input);
+            bool result = BracketChecker.MatchingSquiglyBrackets(input);
 
             // Assert
             Assert.True(result);
@@ -105,10 +105,10 @@ namespace BracketTests
         public void MatchingSquiglyBrackets_ValidPairNestedInsideValidPair_ReturnTrue()
         {
             // Arrange
-            var input = "{{}}";
+            string input = "{{}}";
 
             // Act
-            var result = BracketChecker.MatchingSquiglyBrackets(input);
+            bool result = BracketChecker.MatchingSquiglyBrackets(input);
 
             // Assert
             Assert.True(result);
@@ -120,17 +120,17 @@ namespace BracketTests
         public void MatchingSquiglyBrackets_SpecialCharactersNotSquiglyBrackets_ReturnTrue()
         {
             // Arrange
-            var input = "~`!@#$%^&*()-_=+[]\\|;:'\",<.>/?";
+            string input = "~`!@#$%^&*()-_=+[]\\|;:'\",<.>/?";
 
             // Act
-            var result = BracketChecker.MatchingSquiglyBrackets(input);
+            bool result = BracketChecker.MatchingSquiglyBrackets(input);
 
             // Assert
             Assert.True(result);
         }
 
         // Test a null value as having been passed into the method. Expected result is a thrown
-        // NullReferenceException.
+        // NullReferenceException error.
         [Fact]
         public void MatchingSquiglyBrackets_Null_ReturnException()
         {
